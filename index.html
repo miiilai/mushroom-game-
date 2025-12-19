@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>雨後森林：小熊採菇菇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <h1>得分：<span id="scoreText">0</span></h1>
+        <p>【空白鍵：跳躍】 躲避樹幹與毒菇，收集好吃菇菇！</p>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <div id="recipeModal" class="hidden">
+        <div class="modal-content">
+            <h2>🎉 恭喜！你贏得秘密食譜 🎉</h2>
+            <hr>
+            <h3>【雨後森林奶油菇菇濃湯】</h3>
+            <p>1. 將採集到的好吃菇菇切片。</p>
+            <p>2. 加入洋蔥碎與奶油拌炒至金黃色。</p>
+            <p>3. 倒入鮮奶油與高湯慢火熬煮 15 分鐘。</p>
+            <button onclick="location.reload()">再玩一次</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
